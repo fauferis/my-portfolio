@@ -1,0 +1,264 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  pointer-events: none;
+}
+body {
+  background-color: #201a2e;
+  background-color: #71797e;
+  background-image: linear-gradient(#201a2e, #71797e);
+
+  background-attachment: fixed;
+  /*background-color: #1f1c2d;*/
+  color: white;
+  font-family: sans-serif;
+  font-size: 32px;
+}
+section {
+  margin: left;
+  text-align: center;
+  min-height: 98vh;
+}
+#IntroductionPhoto {
+  right: 10%;
+  top: 20%;
+  position: fixed;
+  height: 58vh;
+  width: 38vh;
+  transform: rotateZ(45deg);
+  z-index: -1;
+}
+#IntroductionPhoto22 {
+  height: 600px;
+  width: 420px;
+  background-image: url(images/micro.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: fixed;
+  transform: rotateZ(45deg);
+  z-index: -1;
+}
+.hid {
+  opacity: 0;
+  transform: translateX(20%);
+  transition: all 0.5s;
+}
+.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+/*mebutinas topbar*/
+#TopBar {
+  border: 4px solid white;
+  padding-right: 12vh;
+  background-color: #201a2e;
+  background: linear-gradient(135deg, #71797e55 25%, transparent 25%) -20px 0/
+      40px 40px,
+    linear-gradient(225deg, #71797e 25%, transparent 25%) -20px 0/ 40px 40px,
+    linear-gradient(315deg, #71797e55 25%, transparent 25%) 0px 0/ 40px 40px,
+    linear-gradient(45deg, #71797e 25%, #201a2e 25%) 0px 0/ 40px 40px;
+}
+nav {
+  margin: left;
+  text-align: right;
+  right: 1px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 7vh;
+}
+nav ul li a {
+  padding: 10px 20px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #fff;
+  transition: all 0.2s;
+}
+nav ul li a:hover {
+  border-color: red;
+}
+.logo {
+  max-width: 150%;
+  position: fixed;
+  right: -69%;
+  top: 56%;
+  z-index: -3;
+}
+#Introduction {
+  position: fixed;
+  left: 10%;
+  top: 15%;
+  font-size: 4vh;
+  width: 40%;
+}
+h1 {
+  font-size: 10vh;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #fff;
+}
+#ContainerPhoto {
+  object-fit: cover;
+  height: 100%;
+  max-width: 100%;
+}
+#ContainerPhoto2 {
+  position: relative;
+  top: 7%;
+  right: 2%;
+  border: 5px #1c1a1d solid;
+  object-fit: cover;
+  height: 90%;
+  max-width: 95%;
+}
+#ContainerVideo {
+  position: relative;
+  left: 5%;
+  top: 5%;
+  border: 5px #1c1a1d solid;
+  object-fit: cover;
+  width: 60vh;
+  height: 60vh;
+  height: 90%;
+  max-width: 95%;
+}
+#hed {
+  grid-column: 1/3;
+}
+#PlayButton {
+  color: #fff;
+  position: fixed;
+  top: 86vh;
+  left: 120vh;
+  padding: 10px 20px;
+  border: 6px solid rgb(89, 0, 255);
+  font-size: 33px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #fff;
+  width: 50vh;
+  height: 10vh;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #2e0043;
+  opacity: 60%;
+}
+#PlayButton:hover {
+  opacity: 100%;
+  transform: scale(1.1);
+  background-color: #5f008b;
+}
+h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 6vh;
+  text-transform: uppercase;
+  font-weight: 1600;
+  letter-spacing: 30px;
+  color: #fff;
+  border-bottom: 3px #fff solid;
+}
+#CardContainer {
+  background: #15001f;
+  display: grid;
+  max-width: 150vh;
+  top: 14%;
+  left: 25%;
+  grid-template-columns: 70% 30%;
+  border: 40px red dot;
+}
+#ContainerText {
+  font-size: 12vh;
+  padding: 1%;
+  line-height: 4vh;
+  text-align: left;
+  font-size: 2vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: monospace;
+}
+#Console {
+  color: green;
+}
+.card {
+  background: #15001f;
+  border: 1px solid #c042ff;
+  font-size: 14px;
+  font-family: monospace;
+  display: grid;
+  max-width: 150vh;
+  position: relative;
+  top: 10vh;
+  left: 15%;
+}
+
+.titlebar {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 21px;
+  font-weight: 450;
+  background-color: #2e0043;
+  max-width: 150vh;
+  text-align: right;
+}
+
+button {
+  width: 40px;
+  height: 35px;
+  margin-left: -5px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  transition: 0.2s;
+}
+
+button svg path,
+button svg rect,
+button svg polygon {
+  fill: #ffffff;
+}
+
+button svg {
+  width: 10px;
+  height: 10px;
+}
+
+.close:hover {
+  background-color: #e81123;
+}
+
+.maximize:hover {
+  background-color: #c042ff2e;
+}
+
+.minimize:hover {
+  background-color: #c042ff2e;
+}
+#Wire0 {
+  position: absolute;
+  top: 64vh;
+  right: 7vh;
+  z-index: 50;
+  width: 50%;
+  height: 50%;
+}
+#Wire1 {
+  position: absolute;
+  top: 66.8vh;
+  left: 25vh;
+  z-index: 50;
+  width: 130%;
+  height: 145%;
+}
